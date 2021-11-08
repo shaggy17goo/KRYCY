@@ -1,8 +1,9 @@
 import os
 import re
 
-#DEBUGGING
-def grepViaRe(path, regexp):
+
+# DEBUGGING
+def grep_via_re(path, regexp):
     filenamePattern = "^[^\0\/]{1,250}\.(txt|py|xml|json)$"
     validPath = re.match(filenamePattern, path)
     if not validPath:
@@ -15,7 +16,8 @@ def grepViaRe(path, regexp):
                 if re.search(regexp, line):
                     print(line, end="")
 
-def grepViaGrep(file, pattern):
+
+def grep_via_grep(file, pattern):
     filenamePattern = "^[^\0\/]{1,250}\.(txt|py|xml|json)$"
     validPath = re.match(filenamePattern, file)
     if not validPath:
@@ -26,10 +28,10 @@ def grepViaGrep(file, pattern):
         cmd = "cat " + file + " | grep -E \"" + pattern + "\""
         os.system(cmd)
 
-if __name__ == '__main__':
-    grepViaRe("searchUtilities.py", "click")
 
+if __name__ == '__main__':
+    grep_via_re("searchUtilities.py", "click")
 
     print("\n\n\n")
 
-    grepViaGrep("searchUtilities.py", "([A-W][a-w]{3}\s)")
+    grep_via_grep("searchUtilities.py", "([A-W][a-w]{3}\s)")

@@ -9,8 +9,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'mygrep = searchUtilities:grepViaGrep',
-            'myre = searchUtilities:grepViaRe',
+            'mygrep = searchUtilities:grep_via_grep',
+            'myre = searchUtilities:grep_via_re',
         ],
     },
 )
