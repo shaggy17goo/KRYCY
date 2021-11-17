@@ -1,8 +1,14 @@
 import os
 import re
+import sqlite3
+
 
 
 # DEBUGGING
+from pythonProject.database import Database
+from pythonProject.log import Log
+
+
 def grep_via_re(path, regexp):
     filenamePattern = "^[^\0\/]{1,250}\.(txt|py|xml|json)$"
     validPath = re.match(filenamePattern, path)
@@ -30,8 +36,7 @@ def grep_via_grep(file, pattern):
 
 
 if __name__ == '__main__':
-    grep_via_re("searchUtilities.py", "click")
-
-    print("\n\n\n")
-
-    grep_via_grep("searchUtilities.py", "([A-W][a-w]{3}\s)")
+    database = Database()
+    log = Log('ALERT', 'Wow wow, much alert, so secure')
+    # database.add_data(log)
+    print(database.get_data_by_id(10))
