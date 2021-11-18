@@ -18,3 +18,5 @@ dr.validate_text_encoding(files=my_files, encodings=encodings_list)
 # Jak sie usunie wypisywanie na konsole to troche lepiej to bedzie wygladalo
 # Na evtx trzeba troche poczekac (u mnie paczka ~250 logow to 4min procesowania)
 # Do zrobienia jest alertowanie
+
+#No dobra, to teraz trzeba pod clicka to podcignac, zeby mozna bylo wywolywac z terminala
