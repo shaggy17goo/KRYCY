@@ -16,6 +16,16 @@ def get_ifconfig():
     result = requests.get(url + "getIfconfig")
     print(result.json())
 
+@click.command()
+@click.option('--interface', '-i', default="", help='Interface')
+@click.option('--filter', '-f', default="", help='Filter')
+@click.option('--time', '-t', default=1, help='Time')
+@click.option('--name', '-n', default="", help='Name')
+def sniff(interface, filter, time, name):
+    param = pysharkParam(interface=interface, bpf_filter=filter, time=time)
+    result = requests.put(url + "sniffing", data=param.json())
+    file = open(name, 'wb')
+    file.write(result.content)
 
 @click.command()
 def get_pcap_list():
@@ -31,16 +41,22 @@ def get_pcap(file):
         file = open(f, 'wb')
         file.write(result.content)
 
+@click.command()
+def get_log_list():
+    result = requests.get(url + "getLogList")
+    print(result.json())
 
 
 @click.command()
-@click.option('--interface', '-i', default="", help='Interface')
-@click.option('--filter', '-f', default="", help='Filter')
-@click.option('--time', '-t', default=1, help='Time')
-@click.option('--name', '-n', default="", help='Name')
-def sniff(interface, filter, time, name):
-    param = pysharkParam(interface=interface, bpf_filter=filter, time=time)
-    result = requests.put(url + "sniffing", data=param.json())
-    file = open(name, 'wb')
-    file.write(result.content)
+@click.option('--file', '-f', default=[], multiple= True, help='File to transfer')
+def get_log(file):
+    for f in file:
+        result = requests.get(url + "getLog?name=" + f)
+        file = open(f, 'wb')
+        file.write(result.content)
 
+@click.command()
+@click.option('--command', '-c', help='Command')
+def exec_command(command):
+    result = requests.get(url + "command?command=" + command)
+    print(result.json())
