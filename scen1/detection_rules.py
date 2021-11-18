@@ -3,6 +3,8 @@ import re
 import xml.sax
 import pyshark as ps
 import Evtx.Evtx as evtx
+import requests
+
 
 def validate_text_encoding(**kwargs):
     if kwargs['files']['pcap'] or kwargs['files']['evtx'] or kwargs['files']['json'] or kwargs['files']['xml']:
@@ -15,6 +17,7 @@ def validate_text_encoding(**kwargs):
             except: failed+=1
         if failed == len(kwargs['encodings']):
             print(f'File {txt_file} doesn\'t meet encoding requirements!')
+            requests.put('http://127.0.0.1:8000/alert', json={'name': 'validate_text_encoding', 'content': f'File {txt_file} doesn\'t meet encoding requirements!'})
 
 
 def validate_file_structure(**kwargs):
