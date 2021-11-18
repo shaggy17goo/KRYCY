@@ -2,7 +2,7 @@ import click
 import os
 import re
 
-filenamePattern = "^[^\0\/]{1,250}\.(txt|py|xml|json)$"
+filename_pattern = "^[^\0\/]{1,250}\.(txt|py|xml|json)$"
 
 
 @click.command()
@@ -20,8 +20,8 @@ def grep_via_re(file, pattern):
 
 
 def grep_via_x(file, pattern, re_or_grep):
-    validPath = re.match(filenamePattern, file)
-    if not validPath:
+    valid_path = re.match(filename_pattern, file)
+    if not valid_path:
         print("invalid file, only txt, py, xml, json extensions supported")
     elif not os.path.isfile(file):
         print("file not found")
