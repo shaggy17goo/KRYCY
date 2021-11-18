@@ -16,10 +16,13 @@ def get_files(path_list, recursive, extensions=['pcap', 'evtx', 'json', 'xml', '
                         found_files.append(root + file)
                 if not recursive: break
         filtered_files = {}
+        print('Files loaded for analysis:')
         for extension in {'pcap', 'evtx', 'json', 'xml', 'txt'}:
-            filtered_files[extension] = []
-        for extension in extensions:
-            regex = '^.+\.{ext}$'.format(ext = extension)
-            filtered_files[extension] = list(filter(re.compile(regex).match, found_files))
+            if extension in extensions:
+                regex = '^.+\.{ext}$'.format(ext = extension)
+                filtered_files[extension] = list(filter(re.compile(regex).match, found_files))
+            else: 
+                filtered_files[extension] = []
+            print(f'{extension}:{len(filtered_files[extension])}  ', end='')
+        print('\n')    
     return filtered_files
-
