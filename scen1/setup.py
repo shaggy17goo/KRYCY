@@ -11,6 +11,7 @@ setup(
         'console_scripts': [
             'mygrep = searchUtilities:grep_via_grep',
             'myre = searchUtilities:grep_via_re',
+            'scan = temp:scan_files'
         ],
     },
 )
