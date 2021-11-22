@@ -13,8 +13,14 @@ logger = Logger(db)
 
 def validate_text_encoding(**kwargs):
     if kwargs['files']['pcap'] or kwargs['files']['evtx'] or kwargs['files']['json'] or kwargs['files']['xml']:
-        print(f'Some unsupported files were provided! This rule works only for txt files.')
-    print(f' ----- Scanning {len(kwargs["files"]["txt"])} txt files ------')
+        # print(f'Some unsupported files were provided! This rule works only for txt files.')
+        logger.log_a_logxd('ERROR',
+                           f'validate_text_encoding({kwargs}) - Some unsupported files were provided! This rule works '
+                           f'only for txt files.')
+
+    # print(f' ----- Scanning {len(kwargs["files"]["txt"])} txt files ------')
+    logger.log_a_logxd('LOG',
+                       f'validate_text_encoding({kwargs}) - Scanning {len(kwargs["files"]["txt"])} txt files')
     for txt_file in kwargs['files']['txt']:
         failed = 0
         for encoding in kwargs['encodings']:
