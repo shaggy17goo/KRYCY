@@ -3,7 +3,6 @@ import re
 import subprocess
 import getpass
 import pyshark
-import nest_asyncio
 
 from fastapi import FastAPI
 from pydantic import BaseModel
