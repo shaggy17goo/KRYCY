@@ -28,9 +28,13 @@ def grep_via_re(file, pattern):
 def grep_via_x(file, pattern, re_or_grep):
     valid_path = re.match(filename_pattern, file)
     if not valid_path:
-        print("invalid file, only txt, py, xml, json extensions supported")
+        # print("invalid file, only txt, py, xml, json extensions supported")
+        logger.log_a_logxd('ERROR', f'grep_via_{re_or_grep}({file, pattern}) - invalid file, only txt, py, xml, json extensions supported')
     elif not os.path.isfile(file):
         print("file not found")
+        logger.log_a_logxd('ERROR',
+                           f'grep_via_{re_or_grep}({file, pattern}) - file not found')
+
     else:
         if re_or_grep == 're':
             with open(file) as f:
