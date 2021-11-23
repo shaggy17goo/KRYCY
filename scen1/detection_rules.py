@@ -69,8 +69,9 @@ def check_for_ip_address(**kwargs):
     dirname = os.path.dirname(__file__)
     full_path = os.path.join(dirname, 'list_of_ip')
     try:
-        blacklist_ip = open(full_path, 'r')
-        print(f'Scanning for IPs: {blacklist_ip.readlines()}')
+        ip_file = open(full_path, 'r')
+        blacklist_ip = ip_file.read().splitlines()
+        print(f'Scanning for IPs: {blacklist_ip}')
     except:
         print(
             'Couldn\'t find file with list of IPs! \nIn order to use this rule, create such file named "list_of_ip" in the same directory as "detection_rules.py" file. \nInside this file write one IP each line.')
@@ -89,7 +90,7 @@ def check_for_ip_address(**kwargs):
             for packet in traffic:
                 if 'IP' in packet:
                     for ip in [packet['IP'].dst, packet['IP'].src]:
-                        if ip not in found_ip and ip in kwargs['ip']:
+                        if ip not in found_ip and ip in blacklist_ip:
                             detection = True
                             description += (f'check_for_ip_address: IP address {ip} found in file {pcap_file}\n')
                             found_ip.append(ip)
@@ -100,7 +101,7 @@ def check_for_ip_address(**kwargs):
             text = open(file, mode='r').read()
             ip_list = list(dict.fromkeys(r.findall(text)))
             for ip in ip_list:
-                if ip in kwargs['ip']:
+                if ip in blacklist_ip:
                     detection = True
                     description += (f'check_for_ip_address: IP address {ip} found in file {file}\n')
         except Exception:
@@ -114,7 +115,7 @@ def check_for_ip_address(**kwargs):
                         event += i
                 ip_list = list(dict.fromkeys(r.findall(event)))
                 for ip in ip_list:
-                    if ip in kwargs['ip']:
+                    if ip in blacklist_ip:
                         detection = True
                         description += (f'check_for_ip_address: IP address {ip} found in file {evtx_file}\n')
         except Exception:
