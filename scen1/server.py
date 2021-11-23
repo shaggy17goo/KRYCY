@@ -1,4 +1,7 @@
+import json
 import os
+import subprocess
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 import uvicorn
@@ -12,7 +15,7 @@ class Alert(BaseModel):
 
 
 class Firewall(BaseModel):
-    action: str
+    list_of_ip: str
 
 
 @app.put("/alert")
@@ -23,14 +26,12 @@ def print_log(alert: Alert):
 
 @app.put("/firewall")
 def print_log(firewall: Firewall):
-    print("FIREWALL\n " +
-          "action: " + firewall.action)
-    os.system(firewall.action)
-
+    list_of_ip = json.loads(firewall.list_of_ip)
+    for ip in list_of_ip:
+        #zeby nic sie nie popsulo
+        result = subprocess.getoutput(f"echo 'iptables -A INPUT -s {ip} -j DROP'")
+        print(result)
 
 if __name__ == "__main__":
     uvicorn.run("server:app", port=8000, reload=True, access_log=False)
 
-
-# requests.put('http://127.0.0.1:8000/alert', json={'name': 'WSTWAWAJ KURWAAAA', 'content': 'ATAKUJO NAS'})
-# requests.put('http://127.0.0.1:8000/firewall', json={'action': 'iptables --help ; rm * ')

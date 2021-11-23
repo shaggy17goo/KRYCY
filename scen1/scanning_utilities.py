@@ -56,6 +56,8 @@ def scan_files(rule_list, rules, path, deep, type):
                 logger.log_a_logxd('ALERT',
                                    f'scan_files({rule_list}, {rules}, {path}, {deep}, {type}) - {description}')
                 alert_generator.alert(name=rule[0], content=description, remote=(action_alert == 'remote'))
+                if action_block is not None:
+                    alert_generator.block(action_block)
             else:
                 logger.log_a_logxd('LOG',
                                    f'scan_files({rule_list}, {rules}, {path}, {deep}, {type}) - no alerts returned ')

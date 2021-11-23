@@ -1,6 +1,9 @@
 import scanning_utilities as su
 import click
 
+import logger
+import search_utilities as search
+
 
 @click.group()
 def cli():
@@ -25,9 +28,23 @@ def listrules(rule_list):
 def scanfiles(rule_list, rules, path, deep, type):
     su.scan_files(rule_list, rules, path, deep, type)
 
+@cli.command()
+@click.option('--file', '-f', default="", help='File to filter')
+@click.option('--pattern', '-p', default="", help='Regular expression pattern, should be entered in ""')
+def grepViaGrep(file, pattern):
+    search.grep_via_x(file, pattern, 'grep')
+
+
+@cli.command()
+@click.option('--file', '-f', help='File to filter')
+@click.option('--pattern', '-p', help='Regular expression pattern, should be entered in ""')
+def grepViaRe(file, pattern):
+    search.grep_via_x(file, pattern, 're')
 
 cli.add_command(listrules)
 cli.add_command(scanfiles)
+cli.add_command(grepViaGrep)
+cli.add_command(grepViaRe)
 
 if __name__ == '__main__':
     cli()

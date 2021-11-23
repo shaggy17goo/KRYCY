@@ -78,7 +78,7 @@ def check_for_ip_address(**kwargs):
         return
 
     action_alert = 'remote'
-    action_block = None
+    action_block = []
     description = ''
     detection = False
 
@@ -92,6 +92,7 @@ def check_for_ip_address(**kwargs):
                     for ip in [packet['IP'].dst, packet['IP'].src]:
                         if ip not in found_ip and ip in blacklist_ip:
                             detection = True
+                            action_block.append(ip)
                             description += (f'check_for_ip_address: IP address {ip} found in file {pcap_file}\n')
                             found_ip.append(ip)
         except Exception:
@@ -103,6 +104,7 @@ def check_for_ip_address(**kwargs):
             for ip in ip_list:
                 if ip in blacklist_ip:
                     detection = True
+                    action_block.append(ip)
                     description += (f'check_for_ip_address: IP address {ip} found in file {file}\n')
         except Exception:
             pass
@@ -117,12 +119,14 @@ def check_for_ip_address(**kwargs):
                 for ip in ip_list:
                     if ip in blacklist_ip:
                         detection = True
+                        action_block.append(ip)
                         description += (f'check_for_ip_address: IP address {ip} found in file {evtx_file}\n')
         except Exception:
             pass
 
     if not detection:
         action_alert = None
+        action_block = None
         description = None
 
     return action_alert, action_block, description
