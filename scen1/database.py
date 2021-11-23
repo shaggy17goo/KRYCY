@@ -34,6 +34,7 @@ class Database:
     def add_data(self, log):
         max_log_id = self.get_max_id()
         self.connect_to_database()
+        log.description = log.description.replace('\'', '')
         sql_query = f"INSERT INTO logs VALUES ({max_log_id+ 1},'{log.log_type}','{log.description}','{log.date}')"
         self.cur.execute(sql_query)
         self.con.commit()

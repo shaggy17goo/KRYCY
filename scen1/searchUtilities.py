@@ -9,9 +9,9 @@ db = Database()
 logger = Logger(db)
 
 
-# @click.command()
-# @click.option('--file', '-f', default="", help='File to filter')
-# @click.option('--pattern', '-p', default="", help='Regular expression pattern, should be entered in ""')
+@click.command()
+@click.option('--file', '-f', default="", help='File to filter')
+@click.option('--pattern', '-p', default="", help='Regular expression pattern, should be entered in ""')
 def grep_via_grep(file, pattern):
     grep_via_x(file, pattern, 'grep')
     logger.log_a_logxd('LOG', f'grep_via_grep({file},{pattern})')
