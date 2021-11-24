@@ -10,6 +10,7 @@ logger = Logger(db)
 
 def grep_via_x(file, pattern, re_or_grep):
     valid_path = re.search(extension, file)
+    logger.log_a_logxd('LOG', f'grep_via_{re_or_grep}({file, pattern})')
     if not valid_path:
         print("invalid file, only txt, py, xml, json extensions supported")
         logger.log_a_logxd('ERROR', f'grep_via_{re_or_grep}({file, pattern}) - invalid file, only txt, py, xml, json extensions supported')
@@ -18,6 +19,7 @@ def grep_via_x(file, pattern, re_or_grep):
         logger.log_a_logxd('ERROR', f'grep_via_{re_or_grep}({file, pattern}) - file not found')
     else:
         if re_or_grep == 're':
+
             with open(file) as f:
                 for line in f:
                     if re.search(pattern, line):
