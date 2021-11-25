@@ -1,5 +1,3 @@
-# sudo apt install sqlite3
-# sudo apt install sqlitebrowser
 import sqlite3
 
 
@@ -35,7 +33,7 @@ class Database:
         max_log_id = self.get_max_id()
         self.connect_to_database()
         log.description = log.description.replace('\'', '')
-        sql_query = f"INSERT INTO logs VALUES ({max_log_id+ 1},'{log.log_type}','{log.description}','{log.date}')"
+        sql_query = f"INSERT INTO logs VALUES ({max_log_id + 1},'{log.log_type}','{log.description}','{log.date}')"
         self.cur.execute(sql_query)
         self.con.commit()
         self.disconnect_from_database()

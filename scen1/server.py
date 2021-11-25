@@ -1,10 +1,9 @@
 import json
-import os
 import subprocess
 
+import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
-import uvicorn
 
 app = FastAPI()
 
@@ -28,10 +27,10 @@ def print_log(alert: Alert):
 def print_log(firewall: Firewall):
     list_of_ip = json.loads(firewall.list_of_ip)
     for ip in list_of_ip:
-        #zeby nic sie nie popsulo
+        # zeby nic sie nie popsulo
         result = subprocess.getoutput(f"echo 'iptables -A INPUT -s {ip} -j DROP'")
         print(result)
 
+
 if __name__ == "__main__":
     uvicorn.run("server:app", port=8000, reload=True, access_log=False)
-

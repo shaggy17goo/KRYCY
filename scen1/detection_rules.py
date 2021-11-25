@@ -1,10 +1,11 @@
 import json
-import re
 import os
+import re
 import xml.sax
-import pyshark as ps
+
 import Evtx.Evtx as evtx
 import nest_asyncio
+import pyshark as ps
 
 # list of encodings to validate for
 # change according to your preferences

@@ -1,10 +1,9 @@
-import alert_generator
-import sys
-import re
 import os
-
+import re
+import sys
 from inspect import getmembers, isfunction
 
+import alert_generator
 from database import Database
 from logger import Logger
 

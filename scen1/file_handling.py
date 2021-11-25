@@ -1,5 +1,5 @@
-import re
 import os
+import re
 
 
 def get_files(path_list, recursive, extensions=['pcap', 'evtx', 'json', 'xml', 'txt']):

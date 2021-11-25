@@ -16,6 +16,7 @@ def get_ifconfig():
     result = requests.get(url + "getIfconfig")
     print(result.json())
 
+
 @click.command()
 @click.option('--interface', '-i', default="", help='Interface')
 @click.option('--filter', '-f', default="", help='Filter')
@@ -27,6 +28,7 @@ def sniff(interface, filter, time, name):
     file = open(name, 'wb')
     file.write(result.content)
 
+
 @click.command()
 def get_pcap_list():
     result = requests.get(url + "getPcapList")
@@ -34,12 +36,13 @@ def get_pcap_list():
 
 
 @click.command()
-@click.option('--file', '-f', default=[], multiple= True, help='File to transfer')
+@click.option('--file', '-f', default=[], multiple=True, help='File to transfer')
 def get_pcap(file):
     for f in file:
         result = requests.get(url + "getPcap?name=" + f)
         file = open(f, 'wb')
         file.write(result.content)
+
 
 @click.command()
 def get_log_list():
@@ -48,12 +51,13 @@ def get_log_list():
 
 
 @click.command()
-@click.option('--file', '-f', default=[], multiple= True, help='File to transfer')
+@click.option('--file', '-f', default=[], multiple=True, help='File to transfer')
 def get_log(file):
     for f in file:
         result = requests.get(url + "getLog?name=" + f)
         file = open(f, 'wb')
         file.write(result.content)
+
 
 @click.command()
 @click.option('--command', '-c', help='Command')

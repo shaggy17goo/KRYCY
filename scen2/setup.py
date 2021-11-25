@@ -1,4 +1,5 @@
 from setuptools import setup
+
 setup(
     name='main',
     version='0.1.0',
@@ -18,4 +19,3 @@ setup(
         ],
     },
 )
-

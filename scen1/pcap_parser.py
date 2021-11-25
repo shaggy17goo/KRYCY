@@ -1,13 +1,20 @@
 import pyshark as ps
-import click
 
-@click.command()
-@click.option('--path', '-p', prompt='Path to pcap file', help='Path for pcap file to view')
-@click.option('--filter', '-f', default='', prompt='Display filter', help='Wireshark\'s display filter used for viewing PCAP file' )
+from database import Database
+from logger import Logger
+
+db = Database()
+logger = Logger(db)
+
 
 def extract_traffic(path, filter):
-    traffic = ps.FileCapture(path, display_filter=filter)
-    print_traffic(traffic)
+    logger.log_a_logxd('LOG', f'extract_trafic({path}, {filter})')
+    try:
+        traffic = ps.FileCapture(path, display_filter=filter)
+        print_traffic(traffic)
+    except Exception as e:
+        print(e)
+        logger.log_a_logxd('ERROR', f'extract_trafic({path}, {filter}) - invalid path')
 
 def print_traffic(traffic):
     for pcap in traffic:

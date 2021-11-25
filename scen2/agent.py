@@ -1,13 +1,12 @@
-import genericpath
 import os
 import re
 import subprocess
+from pathlib import Path
 
 import pyshark
 import uvicorn
 from fastapi import FastAPI, responses
 from pydantic import BaseModel
-from pathlib import Path
 
 app = FastAPI()
 
@@ -20,7 +19,6 @@ class pysharkParam(BaseModel):
 
 pcaps = "/var/log/krycy/pcaps/"
 logs = "/var/log/krycy/logs/"
-
 
 if __name__ == "__main__":
     uvicorn.run("agent:app", port=8000, reload=True, access_log=False)
@@ -61,6 +59,7 @@ def get_pcap(name):
         return responses.FileResponse(pcaps + name)
     return "File doesn't exits"
 
+
 @app.get("/getLogList")
 def get_log_list():
     Path(logs).mkdir(parents=True, exist_ok=True)
@@ -70,7 +69,7 @@ def get_log_list():
 @app.get("/getLog")
 def get_log(name):
     Path(logs).mkdir(parents=True, exist_ok=True)
-    if os.path.isfile(logs+name):
+    if os.path.isfile(logs + name):
         return responses.FileResponse(logs + name)
     return "File doesn't exits"
 
