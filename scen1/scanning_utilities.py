@@ -34,7 +34,7 @@ def scan_files(rule_list, rules, path, deep, type):
         rules = rules.replace(' ', '')
         rules = rules.split(',')
     if len(type) == 0:
-        extensions = ['json', 'xml', 'pcap', 'txt']
+        extensions = ['json', 'xml', 'pcap', 'evtx', 'txt']
     else:
         extensions = list(type)
     loaded_files = get_files(list(path), deep, extensions)

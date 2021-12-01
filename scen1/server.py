@@ -19,7 +19,7 @@ class Firewall(BaseModel):
 
 @app.put("/alert")
 def print_log(alert: Alert):
-    print("ALERT\n " +
+    print("ALERT\n" +
           "name: " + alert.name + "content: " + alert.content)
 
 
@@ -29,7 +29,7 @@ def print_log(firewall: Firewall):
     for ip in list_of_ip:
         # zeby nic sie nie popsulo
         result = subprocess.getoutput(f"echo 'iptables -A INPUT -s {ip} -j DROP'")
-        print(result)
+        print(f"FIREWALL\n{result}")
 
 
 if __name__ == "__main__":

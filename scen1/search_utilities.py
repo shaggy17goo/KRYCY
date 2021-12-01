@@ -1,5 +1,7 @@
 import os
 import re
+import subprocess
+
 import logger as lg
 from database import Database
 from logger import Logger
@@ -29,4 +31,5 @@ def grep_via_x(file, pattern, re_or_grep):
                         lg.output(line, end="")
         elif re_or_grep == 'grep':
             cmd = "cat " + file + " | grep -E \"" + pattern + "\""
-            os.system(cmd)
+            out = subprocess.getoutput(cmd)
+            lg.output(out)
