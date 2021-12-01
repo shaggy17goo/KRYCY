@@ -15,5 +15,7 @@ class Logger:
     def log_a_logxd(self, log_type, description, result=None, if_print=False):
         log = lg.Log(log_type, description, result)
         self.database.add_data(log)
+        file = open("../data/blue_toolkit.log", "a")
+        file.write(str(log) + "\n")
         if if_print:
             output(log)
