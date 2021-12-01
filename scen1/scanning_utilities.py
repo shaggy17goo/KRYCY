@@ -1,6 +1,7 @@
 import os
 import re
 import sys
+import logger as lg
 from inspect import getmembers, isfunction
 
 import alert_generator
@@ -16,18 +17,18 @@ def list_rules(rule_list):
     sys.path.append(rule_list)
     try:
         import detection_rules
-        print('Detection rules in provided file:')
+        lg.output('Detection rules in provided file:')
         i = 1
         for fun in getmembers(detection_rules, isfunction):
-            print(f'{i}. {fun[0]}')
+            lg.output(f'{i}. {fun[0]}')
             i += 1
     except Exception as e:
-        print(e)
+        lg.output(e)
         logger.log_a_logxd('ERROR', f'list_rules({rule_list}) failed')
 
 
 def scan_files(rule_list, rules, path, deep, type):
-    print(f'scan_files({rule_list}, {rules}, {path}, {deep}, {type})')
+    lg.output(f'scan_files({rule_list}, {rules}, {path}, {deep}, {type})')
     logger.log_a_logxd('LOG', f'scan_files({rule_list}, {rules}, {path}, {deep}, {type})')
     if rules:
         rules = rules.replace(' ', '')
@@ -45,7 +46,7 @@ def scan_files(rule_list, rules, path, deep, type):
             number_of_rule += 1
             if rules and (str(number_of_rule) not in rules):
                 continue
-            print(f'--------------------------------------------\n> Using rule: {rule[0]}')
+            lg.output(f'--------------------------------------------\n> Using rule: {rule[0]}')
             logger.log_a_logxd('LOG', f'scan_files({rule_list}, {rules}, {path}, {deep}, {type}) using rule {rule[0]}')
             func = getattr(detection_rules, rule[0])
             action_alert, action_block, description = func(pcap=loaded_files['pcap'], json=loaded_files['json'],
@@ -60,9 +61,9 @@ def scan_files(rule_list, rules, path, deep, type):
             else:
                 logger.log_a_logxd('LOG',
                                    f'scan_files({rule_list}, {rules}, {path}, {deep}, {type}) - no alerts returned ')
-                print('No alerts returned.')
+                lg.output('No alerts returned.')
     except Exception as e:
-        print(e)
+        lg.output(e)
 
 
 def get_files(path_list, recursive, extensions=['pcap', 'evtx', 'json', 'xml', 'txt']):
@@ -82,7 +83,7 @@ def get_files(path_list, recursive, extensions=['pcap', 'evtx', 'json', 'xml', '
                         found_files.append(root + file)
                 if not recursive: break
         filtered_files = {}
-        print('Files loaded for analysis:')
+        lg.output('Files loaded for analysis:')
         logger.log_a_logxd('LOG',
                            f'get_files({path_list}, {recursive}, {extensions}) - Files loaded for analysis')
         for extension in {'pcap', 'evtx', 'json', 'xml', 'txt'}:
@@ -91,6 +92,6 @@ def get_files(path_list, recursive, extensions=['pcap', 'evtx', 'json', 'xml', '
                 filtered_files[extension] = list(filter(re.compile(regex).match, found_files))
             else:
                 filtered_files[extension] = []
-            print(f'{extension}:{len(filtered_files[extension])}  ', end='')
-        print('\n')
+            lg.output(f'{extension}:{len(filtered_files[extension])}  ', end='')
+        lg.output('\n')
     return filtered_files

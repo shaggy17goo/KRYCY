@@ -1,0 +1,104 @@
+scan_files(., 1, ('/home/kali/Desktop',), True, ())
+[LOG]  2021-12-01 11:11:27.083141  scan_files(., 1, (/home/kali/Desktop,), True, ())
+[LOG]  2021-12-01 11:11:27.086132  get_files([/home/kali/Desktop], True, [json, xml, pcap, txt])
+Files loaded for analysis:
+[LOG]  2021-12-01 11:11:27.089360  get_files([/home/kali/Desktop], True, [json, xml, pcap, txt]) - Files loaded for analysis
+json:0  pcap:0  evtx:0  txt:2  xml:12  
+
+--------------------------------------------
+> Using rule: check_for_ip_address
+[LOG]  2021-12-01 11:11:27.097047  scan_files(., [1], (/home/kali/Desktop,), True, ()) using rule check_for_ip_address
+Couldn't find file with list of IPs! 
+In order to use this rule, create such file named "list_of_ip" in the same directory as "detection_rules.py" file. 
+Inside this file write one IP each line.
+cannot unpack non-iterable NoneType object
+<_io.TextIOWrapper name='../data/blue_toolkit.log' mode='a' encoding='UTF-8'>
+scan_files(., 1, ('/home/kali/Desktop',), True, ())
+[LOG]  2021-12-01 11:12:32.888782  scan_files(., 1, (/home/kali/Desktop,), True, ())
+[LOG]  2021-12-01 11:12:32.891523  get_files([/home/kali/Desktop], True, [json, xml, pcap, txt])
+Files loaded for analysis:
+[LOG]  2021-12-01 11:12:32.894888  get_files([/home/kali/Desktop], True, [json, xml, pcap, txt]) - Files loaded for analysis
+json:0  xml:12  pcap:0  evtx:0  txt:2  
+
+--------------------------------------------
+> Using rule: check_for_ip_address
+[LOG]  2021-12-01 11:12:32.904111  scan_files(., [1], (/home/kali/Desktop,), True, ()) using rule check_for_ip_address
+Couldn't find file with list of IPs! 
+In order to use this rule, create such file named "list_of_ip" in the same directory as "detection_rules.py" file. 
+Inside this file write one IP each line.
+cannot unpack non-iterable NoneType object
+[CONSOLE OUTPUT]: scan_files(., 1, ('/home/kali/Desktop',), True, ()) 
+[LOG]  2021-12-01 11:27:06.709123  scan_files(., 1, (/home/kali/Desktop,), True, ())
+[LOG]  2021-12-01 11:27:06.712029  get_files([/home/kali/Desktop], True, [json, xml, pcap, txt])
+[CONSOLE OUTPUT]: Files loaded for analysis: 
+[LOG]  2021-12-01 11:27:06.715633  get_files([/home/kali/Desktop], True, [json, xml, pcap, txt]) - Files loaded for analysis
+[CONSOLE OUTPUT]: xml:12   
+[CONSOLE OUTPUT]: json:0   
+[CONSOLE OUTPUT]: evtx:0   
+[CONSOLE OUTPUT]: txt:2   
+[CONSOLE OUTPUT]: pcap:0   
+[CONSOLE OUTPUT]: 
+ 
+[CONSOLE OUTPUT]: --------------------------------------------
+> Using rule: check_for_ip_address 
+[LOG]  2021-12-01 11:27:06.725451  scan_files(., [1], (/home/kali/Desktop,), True, ()) using rule check_for_ip_address
+[CONSOLE OUTPUT]: cannot unpack non-iterable NoneType object 
+[CONSOLE OUTPUT]: scan_files(., 2, ('/home/kali/Desktop',), True, ()) 
+[LOG]  2021-12-01 11:27:22.791399  scan_files(., 2, (/home/kali/Desktop,), True, ())
+[LOG]  2021-12-01 11:27:22.794182  get_files([/home/kali/Desktop], True, [json, xml, pcap, txt])
+[CONSOLE OUTPUT]: Files loaded for analysis: 
+[LOG]  2021-12-01 11:27:22.797632  get_files([/home/kali/Desktop], True, [json, xml, pcap, txt]) - Files loaded for analysis
+[CONSOLE OUTPUT]: pcap:0   
+[CONSOLE OUTPUT]: txt:2   
+[CONSOLE OUTPUT]: json:0   
+[CONSOLE OUTPUT]: xml:12   
+[CONSOLE OUTPUT]: evtx:0   
+[CONSOLE OUTPUT]: 
+ 
+[CONSOLE OUTPUT]: --------------------------------------------
+> Using rule: validate_file_structure 
+[LOG]  2021-12-01 11:27:22.806753  scan_files(., [2], (/home/kali/Desktop,), True, ()) using rule validate_file_structure
+[LOG]  2021-12-01 11:27:22.822554  scan_files(., [2], (/home/kali/Desktop,), True, ()) - no alerts returned 
+[CONSOLE OUTPUT]: No alerts returned. 
+[CONSOLE OUTPUT]: scan_files(., 2, ('/home/kali',), True, ()) 
+[LOG]  2021-12-01 11:27:34.573014  scan_files(., 2, (/home/kali,), True, ())
+[LOG]  2021-12-01 11:27:34.575833  get_files([/home/kali], True, [json, xml, pcap, txt])
+[CONSOLE OUTPUT]: Files loaded for analysis: 
+[LOG]  2021-12-01 11:27:34.974883  get_files([/home/kali], True, [json, xml, pcap, txt]) - Files loaded for analysis
+[CONSOLE OUTPUT]: txt:1182   
+[CONSOLE OUTPUT]: xml:162   
+[CONSOLE OUTPUT]: pcap:53   
+[CONSOLE OUTPUT]: json:2891   
+[CONSOLE OUTPUT]: evtx:0   
+[CONSOLE OUTPUT]: 
+ 
+[CONSOLE OUTPUT]: --------------------------------------------
+> Using rule: validate_file_structure 
+[LOG]  2021-12-01 11:27:34.989168  scan_files(., [2], (/home/kali,), True, ()) using rule validate_file_structure
+[ALERT]  2021-12-01 11:27:39.414257  scan_files(., [2], (/home/kali,), True, ()) - validate_file_structure: Expecting property name enclosed in double quotes: line 5 column 2 (char 83): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/search-result/tsconfig.json
+validate_file_structure: Expecting property name enclosed in double quotes: line 4 column 2 (char 40): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/git/languages/ignore.language-configuration.json
+validate_file_structure: Expecting property name enclosed in double quotes: line 3 column 24 (char 40): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/php/language-configuration.json
+validate_file_structure: Expecting , delimiter: line 14 column 2 (char 170): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/xml/xsl.language-configuration.json
+validate_file_structure: Expecting , delimiter: line 28 column 2 (char 505): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/sql/language-configuration.json
+validate_file_structure: Expecting value: line 1 column 1 (char 0): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/python/.vscode/tasks.json
+validate_file_structure: Expecting property name enclosed in double quotes: line 3 column 3 (char 19): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/markdown-basics/language-configuration.json
+validate_file_structure: Expecting value: line 28 column 3 (char 654): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/AngularJS/ngCli/commands/generate.json
+validate_file_structure: Expecting value: line 8 column 9 (char 110): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/python/helpers/typeshed/pyrightconfig.json
+validate_file_structure: Expecting value: line 1 column 1 (char 0): /home/kali/.vscode/argv.json
+validate_file_structure: Extra data: line 2 column 1 (char 311): /home/kali/.cache/JetBrains/PyCharm2021.2/log/indexing-diagnostic/krycy.8870ca5a/shared-index-events.json
+validate_file_structure: junk after document element /home/kali/miniconda3/pkgs/libxml2-2.9.12-h03d6c58_0/share/doc/libxml2-2.9.12/html/tst.xml
+
+[CONSOLE OUTPUT]: ALERT (12) - validate_file_structure
+validate_file_structure: Expecting property name enclosed in double quotes: line 5 column 2 (char 83): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/search-result/tsconfig.json
+validate_file_structure: Expecting property name enclosed in double quotes: line 4 column 2 (char 40): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/git/languages/ignore.language-configuration.json
+validate_file_structure: Expecting property name enclosed in double quotes: line 3 column 24 (char 40): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/php/language-configuration.json
+validate_file_structure: Expecting ',' delimiter: line 14 column 2 (char 170): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/xml/xsl.language-configuration.json
+validate_file_structure: Expecting ',' delimiter: line 28 column 2 (char 505): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/sql/language-configuration.json
+validate_file_structure: Expecting value: line 1 column 1 (char 0): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/python/.vscode/tasks.json
+validate_file_structure: Expecting property name enclosed in double quotes: line 3 column 3 (char 19): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/textmate/lib/bundles/markdown-basics/language-configuration.json
+validate_file_structure: Expecting value: line 28 column 3 (char 654): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/AngularJS/ngCli/commands/generate.json
+validate_file_structure: Expecting value: line 8 column 9 (char 110): /home/kali/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/212.5284.44/plugins/python/helpers/typeshed/pyrightconfig.json
+validate_file_structure: Expecting value: line 1 column 1 (char 0): /home/kali/.vscode/argv.json
+validate_file_structure: Extra data: line 2 column 1 (char 311): /home/kali/.cache/JetBrains/PyCharm2021.2/log/indexing-diagnostic/krycy.8870ca5a/shared-index-events.json
+validate_file_structure: junk after document element /home/kali/miniconda3/pkgs/libxml2-2.9.12-h03d6c58_0/share/doc/libxml2-2.9.12/html/tst.xml
+ 
