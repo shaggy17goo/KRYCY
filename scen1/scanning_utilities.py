@@ -2,6 +2,7 @@ import os
 import re
 import sys
 import logger as lg
+import yara_handler as yh
 from inspect import getmembers, isfunction
 
 import alert_generator
@@ -26,10 +27,42 @@ def list_rules(rule_list):
         lg.output(e)
         logger.log_a_logxd('ERROR', f'list_rules({rule_list}) failed')
 
+def scan_files_with_yara_rules(rules_path, rules_deep, rules, path, deep, type):
+    lg.output(f'scan_files_with_yara_rules({rules_path}, {rules_deep}, {rules}, {path}, {deep}, {type})')
+    logger.log_a_logxd('LOG', f'scan_files_with_yara_rules({rules_path}, {rules_deep}, {rules}, {path}, {deep}, {type})')
+    output_string = ''
+    if rules:
+        rules = rules.replace(' ', '')
+        rules = rules.split(',')
+    if len(type) == 0:
+        extensions = ['json', 'xml', 'txt', 'evtx']
+    else:
+        extensions = list(type)
+    loaded_files = get_files(list(path), deep, extensions)
+    number_of_rule = 0
+    rule_list = yh.load_yara_rules(rules_path, rules_deep)
+    for rule in rule_list:
+        number_of_rule+=1
+        if rules and (str(number_of_rule) not in rules):
+            continue
+        for extension in loaded_files:
+            for file in loaded_files[extension]:
+                action_alert, action_block, description = yh.yara_handler(rule, file)
+                if description:
+                    output_string += f'\n{description}'    
+    if output_string:
+        logger.log_a_logxd('ALERT', f'scan_files_with_yara_rules({rule_list}, {rules}, {path}, {deep}, {type}) - {output_string}')
+        alert_generator.alert(name='YARA rules', content=output_string, remote=True)
+    else:
+        logger.log_a_logxd('LOG', f'scan_files_with_yara_rules({rule_list}, {rules}, {path}, {deep}, {type}) - no alerts returned ')
+        lg.output('No alerts returned.')
 
-def scan_files(rule_list, rules, path, deep, type):
-    lg.output(f'scan_files({rule_list}, {rules}, {path}, {deep}, {type})')
-    logger.log_a_logxd('LOG', f'scan_files({rule_list}, {rules}, {path}, {deep}, {type})')
+
+        
+
+def scan_files_with_python_rules(rule_list, rules, path, deep, type):
+    lg.output(f'scan_files_with_python_rules({rule_list}, {rules}, {path}, {deep}, {type})')
+    logger.log_a_logxd('LOG', f'scan_files_with_python_rules({rule_list}, {rules}, {path}, {deep}, {type})')
     if rules:
         rules = rules.replace(' ', '')
         rules = rules.split(',')
@@ -47,20 +80,20 @@ def scan_files(rule_list, rules, path, deep, type):
             if rules and (str(number_of_rule) not in rules):
                 continue
             lg.output(f'--------------------------------------------\n> Using rule: {rule[0]}')
-            logger.log_a_logxd('LOG', f'scan_files({rule_list}, {rules}, {path}, {deep}, {type}) using rule {rule[0]}')
+            logger.log_a_logxd('LOG', f'scan_files_with_python_rules({rule_list}, {rules}, {path}, {deep}, {type}) using rule {rule[0]}')
             func = getattr(detection_rules, rule[0])
             action_alert, action_block, description = func(pcap=loaded_files['pcap'], json=loaded_files['json'],
                                                            xml=loaded_files['xml'], txt=loaded_files['txt'],
                                                            evtx=loaded_files['evtx'])
             if description:
                 logger.log_a_logxd('ALERT',
-                                   f'scan_files({rule_list}, {rules}, {path}, {deep}, {type}) - {description}')
+                                   f'scan_files_with_python_rules({rule_list}, {rules}, {path}, {deep}, {type}) - {description}')
                 alert_generator.alert(name=rule[0], content=description, remote=(action_alert == 'remote'))
                 if action_block is not None:
                     alert_generator.block(action_block)
             else:
                 logger.log_a_logxd('LOG',
-                                   f'scan_files({rule_list}, {rules}, {path}, {deep}, {type}) - no alerts returned ')
+                                   f'scan_files_with_python_rules({rule_list}, {rules}, {path}, {deep}, {type}) - no alerts returned ')
                 lg.output('No alerts returned.')
     except Exception as e:
         lg.output(e)
