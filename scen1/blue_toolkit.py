@@ -3,6 +3,7 @@ import pcap_parser as pp
 import scanning_utilities as su
 import search_utilities as search
 import yara_handler as yh
+import threshold_detection as detection
 
 
 @click.group()
@@ -59,6 +60,13 @@ def grep_via_grep(file, pattern):
 def grep_via_re(file, pattern):
     search.grep_via_x(file, pattern, 're')
 
+@cli.command()
+@click.option('--file', '-f', help='File with data in .csv')
+@click.option('--type_of_detection', '-t', multiple=False,
+              type=click.Choice(['flow_duration', 'unique_ports', 'high_difference'], case_sensitive=False))
+def anomaly_detection(file, type_of_detection):
+    detection.detection_click(file, type_of_detection)
+
 
 @cli.command()
 @click.option('--path', '-p', prompt='Path to pcap file', help='Path for pcap file to view')
@@ -75,6 +83,7 @@ cli.add_command(scan_files_with_yara_rules)
 cli.add_command(grep_via_grep)
 cli.add_command(grep_via_re)
 cli.add_command(print_pcap)
+cli.add_command(anomaly_detection)
 
 if __name__ == '__main__':
     cli()
