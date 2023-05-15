@@ -1,0 +1,12 @@
+Mon Nov 15 06:21:16 2021 [pid 5376] CONNECT: Client "10.0.3.15"
+Mon Nov 15 06:21:24 2021 [pid 5378] CONNECT: Client "10.0.3.15"
+Mon Nov 15 06:21:24 2021 [pid 5377] [ftpuser] OK LOGIN: Client "10.0.3.15"
+Mon Nov 15 06:22:06 2021 [pid 5382] CONNECT: Client "10.0.3.15"
+Mon Nov 15 06:22:06 2021 [pid 5381] [ftpuser] OK LOGIN: Client "10.0.3.15"
+Mon Nov 15 06:22:06 2021 [pid 5383] [ftpuser] OK DOWNLOAD: Client "10.0.3.15", "/archivum.tar.gz", 0.00Kbyte/sec
+Mon Nov 15 07:19:26 2021 [pid 2346] CONNECT: Client "10.0.3.15"
+Mon Nov 15 07:19:34 2021 [pid 2348] CONNECT: Client "10.0.3.15"
+Mon Nov 15 07:19:34 2021 [pid 2347] [ftpuser] OK LOGIN: Client "10.0.3.15"
+Mon Nov 15 07:19:46 2021 [pid 2352] CONNECT: Client "10.0.3.15"
+Mon Nov 15 07:19:46 2021 [pid 2351] [ftpuser] OK LOGIN: Client "10.0.3.15"
+Mon Nov 15 07:19:46 2021 [pid 2353] [ftpuser] OK DOWNLOAD: Client "10.0.3.15", "/raprt_11_11_2021.tar.gz", 2179031 bytes, 11544.98Kbyte/sec

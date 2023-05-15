@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        KRYCY LAB 1B - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p:last-child{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p:last-child,.markdown-body .alert>ul:last-child{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.figma{display:table;position:relative;width:100%;padding-bottom:56.25%}.figma iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;border:1px solid #eee}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:50%;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;text-decoration:none;padding-left:22px}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em;font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="KRYCY-LAB-1B" data-id="KRYCY-LAB-1B"><a class="anchor hidden-xs" href="#KRYCY-LAB-1B" title="KRYCY-LAB-1B"><span class="octicon octicon-link"></span></a><span>KRYCY LAB 1B</span></h1><h2 id="Autorzy" data-id="Autorzy"><a class="anchor hidden-xs" href="#Autorzy" title="Autorzy"><span class="octicon octicon-link"></span></a><span>Autorzy:</span></h2><h3 id="Mateusz-Borkowski-Michał-Wawrzyńczak-Paweł-Gryka-Paweł-Popiołek" data-id="Mateusz-Borkowski-Michał-Wawrzyńczak-Paweł-Gryka-Paweł-Popiołek"><a class="anchor hidden-xs" href="#Mateusz-Borkowski-Michał-Wawrzyńczak-Paweł-Gryka-Paweł-Popiołek" title="Mateusz-Borkowski-Michał-Wawrzyńczak-Paweł-Gryka-Paweł-Popiołek"><span class="octicon octicon-link"></span></a><span>Mateusz Borkowski, Michał Wawrzyńczak, Paweł Gryka, Paweł Popiołek</span></h3><h2 id="Zadanie-do-wykonania" data-id="Zadanie-do-wykonania"><a class="anchor hidden-xs" href="#Zadanie-do-wykonania" title="Zadanie-do-wykonania"><span class="octicon octicon-link"></span></a><span>Zadanie do wykonania</span></h2><p><span>Naszym zadaniem było zapoznanie się z środowiskiem i dostępnymi narzędziami w DetectionLab oraz HELK</span></p><h2 id="DetectionLab" data-id="DetectionLab"><a class="anchor hidden-xs" href="#DetectionLab" title="DetectionLab"><span class="octicon octicon-link"></span></a><span>DetectionLab</span></h2><h3 id="Środowisko-i-narzędzia-Zapoznanie-się-z-nim" data-id="Środowisko-i-narzędzia-Zapoznanie-się-z-nim"><a class="anchor hidden-xs" href="#Środowisko-i-narzędzia-Zapoznanie-się-z-nim" title="Środowisko-i-narzędzia-Zapoznanie-się-z-nim"><span class="octicon octicon-link"></span></a><span>Środowisko i narzędzia (Zapoznanie się z nim)</span></h3><p><span>DetectionLab to zestaw potrzebnych skryptów i plików używanych do szybkiego uruchomienia wirtualnego środowiska laboratoryjnego wyposażonego w narzędzia do cyberbezpieczeństwa obronnego. Środowisko składa się z czterech hostów w następującej architekturze:</span><br>
+<img src="https://i.imgur.com/eroDn1Q.png" alt="" loading="lazy"></p><p><span>W dużej ogólności, hosty </span><strong><span>DC</span></strong><span> i </span><strong><span>WIN10</span></strong><span> przekazują logi z akcji na nich wykonanych do </span><strong><span>Loggera</span></strong><span> (albo bezpośrednio albo przez </span><strong><span>WEF</span></strong><span>)</span></p><p><span>Na hostach windows’owych znajdują się narzędzia do generowania podejrzanych akcji a następnie zbierania z nich logów:</span></p><ul>
+<li><span>Atomic Red Team</span></li>
+<li><span>Microsoft ATA</span></li>
+<li><span>Sysmon</span></li>
+<li><span>Osquery</span></li>
+<li><span>Velociraptor</span></li>
+</ul><p><span>Na </span><strong><span>Logger</span></strong><span>’rze znajduje sie wiele narzędzi do oglądania i analizy logów:</span></p><ul>
+<li><span>Splunk</span>
+<ul>
+<li><span>Suricata</span></li>
+<li><span>Zeek</span></li>
+</ul>
+</li>
+<li><span>Fleet</span></li>
+<li><span>Apache Guacamole</span></li>
+<li><span>Velociraptor</span></li>
+</ul><h3 id="Wykonane-działania-na-maszynach" data-id="Wykonane-działania-na-maszynach"><a class="anchor hidden-xs" href="#Wykonane-działania-na-maszynach" title="Wykonane-działania-na-maszynach"><span class="octicon octicon-link"></span></a><span>Wykonane działania na maszynach</span></h3><h4 id="Początkowe-problemy" data-id="Początkowe-problemy"><a class="anchor hidden-xs" href="#Początkowe-problemy" title="Początkowe-problemy"><span class="octicon octicon-link"></span></a><span>Początkowe problemy</span></h4><p><span>Do ćwiczenia podchodziliśmy w sumie czterokrotnie. Pierwszy raz (na samym początku udostępnienia ćwiczenia) jedynie zorientowaliśmy się jak wygląda środowisko. Niestety drugie podejście do lab zakończyło się niepowodzeniem przez wygaśnięcie licencji splunka. Trzecie podobnie, przez skończenie się miejca na hoście (vagrant nie potrafił wystartować). W czwartym podejściu znowu napotkaliśmy problem - host logger nie otrzymywał adresu ip:</span><br>
+<img src="https://i.imgur.com/0HgeE2w.png" alt="" loading="lazy"></p><p><span>Mimo restartów vagranta nietety problem nie ustępował. Po dłuższej sesji debuggingu okazało się, że w konfiguracji netplan zostały trzykrotnie powtórzone komendy, po usunięciu nadmiaru sieć zaczęła działać.</span></p><h4 id="Generowanie-logów" data-id="Generowanie-logów"><a class="anchor hidden-xs" href="#Generowanie-logów" title="Generowanie-logów"><span class="octicon octicon-link"></span></a><span>Generowanie logów</span></h4><p><span>Żeby wygenerować dane do analzy użyliśmy (zgodnie z sugestią) narzędzia </span><strong><span>Atomic Red Team</span></strong><span>, na hostach </span><strong><span>WIN10</span></strong><span> i </span><strong><span>DC</span></strong><span>:</span><br>
+<img src="https://i.imgur.com/x6UQkZE.png" alt="" loading="lazy"></p><p><span>Powyżej wykonaliśmy jedynie dwa proponowane testy z dokumentacji ale potem (żeby wygenerować więcej logów), włączyliśmy także narzędzie z opcją </span><em><span>All</span></em><span>.</span></p><h4 id="Przeglądanie-logów" data-id="Przeglądanie-logów"><a class="anchor hidden-xs" href="#Przeglądanie-logów" title="Przeglądanie-logów"><span class="octicon octicon-link"></span></a><span>Przeglądanie logów</span></h4><p><span>Następnie na </span><strong><span>logger</span></strong><span>’ze włączyliśmy </span><em><span>Splunk</span></em><span>’a i sprawdziliśmy, czy pojawiły się jakieś alerty/logi. Większość z logów pochodziła z </span><em><span>zeek</span></em><span>, dlatego je wyświetliliśmy:</span><br>
+<img src="https://i.imgur.com/walE8qY.png" alt="" loading="lazy"></p><p><span>Należy jeszcze dodać, że przedtem także sprawdziliśmy logi (przed wykonaniem Atomic Red Team-testów) i żadne się nie pojawiły - dlatego mamy prawie pewność, że logi pochodzą właśnie z tych wydarzeń. Zgadzało się także pochodzenie logów - najpierw pojawiły się logi z hosta </span><strong><span>WIN10</span></strong><span> a dopiero później z </span><strong><span>DC</span></strong><span> - czyli w takiej samej kolejności w jakiej włączaliśmy testy.</span></p><p><span>Dodatkowo znaleźliśmy opcję mapowania otrzymanych alertów na matrycę </span><strong><span>MITRE</span></strong><span>, gdy podchodziliśmy do ćwiczenia za pierwszym razem, udało się nam zobaczyć prawidłowo załadowane logi zmapowane do matrycy </span><strong><span>MITRE</span></strong><span>, jednakże w ostatecznym podejściu nie udało się już załadować danych do tej opcji. NIestety nie mamy screenshota potwierdzającego z pierwszego podejścia.</span></p><p><img src="https://i.imgur.com/oCOlDVJ.png" alt="" loading="lazy"></p><h4 id="Stawianie-środowiska-na-świeżo" data-id="Stawianie-środowiska-na-świeżo"><a class="anchor hidden-xs" href="#Stawianie-środowiska-na-świeżo" title="Stawianie-środowiska-na-świeżo"><span class="octicon octicon-link"></span></a><span>Stawianie środowiska na świeżo</span></h4><p><span>Ze względu na istniejace problemy postanowiliśmy całe środowisko przywrócić do stanu początkowego. Tu także wystąpiły problemy ze względu na modyfikację url do pobrania Velociraptora, aktualizacja stanu do aktuanego z tym w repozytorium </span><code>https://github.com/clong/DetectionLab</code><span> także nie pomagała. Po zamianie url w skrypcie </span><code>install-velociraptor.ps1</code><span> udało się postawić poprawnie całe środowisko</span><br>
+<img src="https://i.imgur.com/UPuSLNF.png" alt="" loading="lazy"></p><p><span>Wykonaliśmy podstawowy </span><code>Invoke-AtomicTest T1218.010 -TestNumbers 1,2</code><span>, logi były poprawnie przesyłane i widoczne w Splunku.</span><br>
+<img src="https://i.imgur.com/6bXUIn0.png" alt="" loading="lazy"></p><p><span>Zakończyliśmy pracę i chcieliśmy wykonać więcej testów, następnego dnia. Po powrocie do środowiska zaczęły ponownie występować różne problemy.</span></p><h4 id="AtomicTests" data-id="AtomicTests"><a class="anchor hidden-xs" href="#AtomicTests" title="AtomicTests"><span class="octicon octicon-link"></span></a><span>AtomicTests</span></h4><p><span>Uruchomiliśmy kilka AtomicTestów i obserwowaliśmy winiki w Spunku.</span></p><h4 id="T1218---Signed-Binary-Proxy-Execution" data-id="T1218---Signed-Binary-Proxy-Execution"><a class="anchor hidden-xs" href="#T1218---Signed-Binary-Proxy-Execution" title="T1218---Signed-Binary-Proxy-Execution"><span class="octicon octicon-link"></span></a><span>T1218 - Signed Binary Proxy Execution</span></h4><p><img src="https://i.imgur.com/ioQfEvb.png" alt="" loading="lazy"><br>
+<img src="https://i.imgur.com/sOhsydf.png" alt="" loading="lazy"><br>
+<span>Po wykonaniu testu możemy zaobserwować w splunku, że IDS wykrył to zagrożenie.</span></p><h4 id="T1078---Default-Accounts" data-id="T1078---Default-Accounts"><a class="anchor hidden-xs" href="#T1078---Default-Accounts" title="T1078---Default-Accounts"><span class="octicon octicon-link"></span></a><span>T1078 - Default Accounts</span></h4><p><img src="https://i.imgur.com/vE34QVB.png" alt="" loading="lazy"><br>
+<img src="https://i.imgur.com/iwEPFo6.png" alt="" loading="lazy"><br>
+<img src="https://i.imgur.com/meA0bCJ.png" alt="" loading="lazy"></p><p><span>Nie udało nam się zaobserwować tej technik (uzyskania dostępy z wykorzystaniem istniejacych kont domyślnych) w splanku. Możliwe, że IDS nie wykrył tej techniki. widzimy jednak logi które, mogą dotyczyć innych uruchamianych przez nas testów. Jak np </span><code>T1107 - File Deletion</code><span>.</span></p><h4 id="Podsumowanie-wykrytych-zagrożeń-po-uruchomionych-przez-nas-testach" data-id="Podsumowanie-wykrytych-zagrożeń-po-uruchomionych-przez-nas-testach"><a class="anchor hidden-xs" href="#Podsumowanie-wykrytych-zagrożeń-po-uruchomionych-przez-nas-testach" title="Podsumowanie-wykrytych-zagrożeń-po-uruchomionych-przez-nas-testach"><span class="octicon octicon-link"></span></a><span>Podsumowanie wykrytych zagrożeń po uruchomionych przez nas testach.</span></h4><p><img src="https://i.imgur.com/ZLTu0MD.png" alt="" loading="lazy"></p><h2 id="HELK" data-id="HELK"><a class="anchor hidden-xs" href="#HELK" title="HELK"><span class="octicon octicon-link"></span></a><span>HELK</span></h2><h3 id="Środowisko-i-narzędzia" data-id="Środowisko-i-narzędzia"><a class="anchor hidden-xs" href="#Środowisko-i-narzędzia" title="Środowisko-i-narzędzia"><span class="octicon octicon-link"></span></a><span>Środowisko i narzędzia</span></h3><p><em><span>HELK</span></em><span> jest </span><em><span>open-source</span></em><span>’ową platformą wykorzystywaną w cyberbezpieczeństwie defensynym, składającą się z poniższych komponentów:</span></p><ul>
+<li><em><span>Kafka</span></em><span> - umożliwia obsługę danych (logów) pochodzących z wielu źródeł w czasie rzeczywstym,</span></li>
+<li><em><span>Elasticsearch</span></em><span> - silnik do wyszukiwania i analizy danych,</span></li>
+<li><em><span>Logstash</span></em><span> - przekazuje zagregowane przez </span><em><span>Kafk</span></em><span>’e logi dalej do </span><em><span>Elasticsearch</span></em><span>’a,</span></li>
+<li><em><span>Kibana</span></em><span> - platforma służąca do wizualizacji i analizy danych, zaprojektowana aby współpracować z </span><em><span>Elasticsearch</span></em><span>,</span></li>
+<li><em><span>Apache Spark</span></em><span> - platforma programistyczna dla obliczeń rozproszonych,</span></li>
+<li><em><span>ES-Hadoop</span></em><span> - pozwala na interakcję pomiędzy </span><em><span>Elasticsearch</span></em><span>’em, a </span><em><span>Spark</span></em><span>’iem,</span></li>
+<li><em><span>GraphFrames</span></em><span> - </span><em><span>package</span></em><span> do </span><em><span>Spark</span></em><span>’a, rozbudowuje jego możliwości obsługi grafów,</span></li>
+<li><em><span>JupyterNotebook (JupyterLab)</span></em><span> - pozwala na tworzenie i udostępnianie dokumentów zawierających wykonywalny kod,</span></li>
+<li><em><span>Elastalert</span></em><span> - rozwiązanie służące do powiadomiania o anomaliach, albo o dopasowaniach do określonych wzorców danych z </span><em><span>Elasticsearch</span></em><span>’a.</span></li>
+</ul><p><img src="https://i.imgur.com/Az2mMwG.png" alt="" loading="lazy"></p><h3 id="Wykonanie-działania-na-maszynach" data-id="Wykonanie-działania-na-maszynach"><a class="anchor hidden-xs" href="#Wykonanie-działania-na-maszynach" title="Wykonanie-działania-na-maszynach"><span class="octicon octicon-link"></span></a><span>Wykonanie działania na maszynach</span></h3><h4 id="Ożywieie-środowiska-danymi" data-id="Ożywieie-środowiska-danymi"><a class="anchor hidden-xs" href="#Ożywieie-środowiska-danymi" title="Ożywieie-środowiska-danymi"><span class="octicon octicon-link"></span></a><span>Ożywieie środowiska danymi</span></h4><p><span>Aby poznać dostępne narzędzia, należało najpierw ożywić środowisko danymi. Przy próbie załadowania danych do środowiska napotkaliśmy na następujące problemy:</span></p><ul>
+<li><span>dane ożywiające nie istniały w miesjcu zalinkowanym w podanym w instrukcji poradniku,</span></li>
+<li><span>brak komunikacji z </span><em><span>Elasticsearch</span></em><span> po domyślnym porcie (porzebne w celu wrzucenia tam danych za pomocą skryptu w </span><em><span>Pythonie</span></em><span>),</span></li>
+<li><span>problem z wczytaniem danych w formacie </span><em><span>json</span></em><span> po ich rozpakowaniu.</span></li>
+</ul><p><span>Aby uporać się z powyższymi problemami odpowiednio:</span></p><ul>
+<li><span>odnaleźliśmy odpowiednie dane ożywiające w sieci (repozytorium z tymi danymi zmieniło nazwę dlatego link ze strony nie zadziałał - nowa nazwa repozytorium to </span><em><span>OTRF/Security-Datasets</span></em><span>),</span></li>
+<li><span>w celu zapewnienia komunikacji z </span><em><span>Elasticsearch</span></em><span> należało zmodyfikowac plik konfiguracyjny </span><em><span>helk-kibana-analysis-basic.yml</span></em><span>, tak aby </span><em><span>docker</span></em><span> wystawił odpowiedni port do komunikacji z bazą - </span><em><span>9200</span></em><span>,</span></li>
+<li><span>pliki do </span><em><span>Elasticsearch</span></em><span>’a należało przekazywać nie w formacie </span><em><span>json</span></em><span>, a spakować je do </span><em><span>tar.gz</span></em><span>.</span></li>
+</ul><p><span>Dla ułatwienia pracy i rozwiązywania problemów całe środowisko postanowiliśmy postawić u siebie lokalnie.</span></p><p><img src="https://i.imgur.com/qewNtVT.png" alt="" loading="lazy"></p><p><span>Na powyższym screenie widać że udało nam się załadować odpowiednie logi i mamy na nie podgląd z </span><em><span>Kiban</span></em><span>’y.</span></p><h4 id="Kibana" data-id="Kibana"><a class="anchor hidden-xs" href="#Kibana" title="Kibana"><span class="octicon octicon-link"></span></a><span>Kibana</span></h4><p><span>Najbardziej interesującym z naszej perspektywy komponentem całego środowiska jest </span><em><span>Kibana</span></em><span>. Jest tak ponieważ oferuje ona wiele możliwości operowania na zebranych danych, a to wszystko za pomocą interfejsu użytkownika. Z powyższego powodu postanowiliśmy skupić nasze działania wokół tego programu.</span></p><h5 id="Discover" data-id="Discover"><a class="anchor hidden-xs" href="#Discover" title="Discover"><span class="octicon octicon-link"></span></a><span>Discover</span></h5><p><span>Zakładka </span><em><span>Discover</span></em><span> pozwala na podgląd wszystkich zebranych logów. Oferuje ona wiele możliwości ułatwienia sobie pracy z przekopywaniem się przez ogromne ilości mało czytelnych logów. W tym celu możemy np.:</span></p><ul>
+<li><span>rozwinąc konkretny, interesujący nas rekord, otrzymując tym samym bardziej czytelny format:</span></li>
+</ul><p><img src="https://i.imgur.com/86LK4qk.png" alt="" loading="lazy"></p><ul>
+<li><span>podejrzeć ilość powtórzeń danej wartości konkretnego pola dla różnych logów:</span></li>
+</ul><p><img src="https://i.imgur.com/agZXCoI.png" alt="" loading="lazy"></p><ul>
+<li><span>przeglądać wszystkie logi z podglądem tylko na interesujące nas pola:</span></li>
+</ul><p><img src="https://i.imgur.com/p2ZWn2C.png" alt="" loading="lazy"></p><ul>
+<li><span>tworzyć i wysyłać zapytania KQL co pozwala na przefiltrowanie danych (przykład uzycia w dalszej częsci dokumentu - punkt </span><em><span>Dashboards</span></em><span>)</span></li>
+</ul><h5 id="Visualization" data-id="Visualization"><a class="anchor hidden-xs" href="#Visualization" title="Visualization"><span class="octicon octicon-link"></span></a><span>Visualization</span></h5><p><span>Zakładka </span><em><span>Visualization</span></em><span> pozwala nam na tworzenie róznego rodzaju wykresów. Stworzenie dobrej wizualizacji może w dużym stopniu ułatwić dla człowieka zauważenie różnych anomalii.</span><br>
+<span>Zakładka </span><em><span>Visualization</span></em><span> pozwala między innymi na:</span></p><ul>
+<li><span>tworzenie histogramów:</span><br>
+<img src="https://i.imgur.com/qPgXGot.png" alt="" loading="lazy"></li>
+<li><span>tworzenie wykresów kołowych:</span><br>
+<img src="https://i.imgur.com/e6PN5pb.png" alt="" loading="lazy"></li>
+</ul><p><span>Jak widać dla powyższych duże znaczenie ma dobór odpowiedniej metody wizualizacji do analizowanych danych. W obu przykładach wyświetlane są czasy zachodzenia zdarzeń w systemie. Dla pierwszego przykładu (histogram) na pierwszy rzut oka widać jak wiele zdarzeń zaszło w jakim czasie i analityk bezpieczeństwa może z takiego widoku szybko wyciągnąć wnioski. W drugim przykładzie (wykres kołowy) widoczność jest zdecydowanie gorsza i wyciągniecie wniosków z takiego widoku może być zdecydowanie bardziej czasochłonne, a przy odpowiednich warunkach - niemożliwe.</span></p><h5 id="Dashboards" data-id="Dashboards"><a class="anchor hidden-xs" href="#Dashboards" title="Dashboards"><span class="octicon octicon-link"></span></a><span>Dashboards</span></h5><p><span>Zakładka </span><em><span>Dashboards</span></em><span> oferuje rozwiązanie, które ostatecznie może być&nbsp;dla analityka bezpieczeństwa najczęściej odwiedzanym miejscem. Umożliwa ona tworzenie i zapisywanie wielu dashboard’ów. Pojedynczy dashboard może składać się z wielu wybranych komponentów. Komponentami możliwymi do dodania na taką talicę są np. różnego rodziaju wizualizacje, tablice danych czy inne informacje niepochodzące z zagregowanych logów, ale takie które chcielibyśmy mieć pod ręką.</span><br>
+<span>Dla prezentowanego poniżej </span><em><span>dashboard</span></em><span>’a wykorzystaliśmy przedstawione w poprzenich punktach konstrukcje. Zostały one przez nas zapisane, co umożliwiło wykorzystanie ich w tym momencie. Tymi konstrukcjami są:</span></p><ul>
+<li><span>lista wszystkich logów, ale z wyświetlonymi jedynie interesującymi nas polami,</span></li>
+<li><span>histogram czasu zachodzenia zdarzeń.</span></li>
+</ul><p><img src="https://i.imgur.com/Isdp6Ch.png" alt="" loading="lazy"></p><p><span>Na powyższym screenie mamy wiele spojrzeń na ten sam zbiór logów na jednej karcie, co już samo w sobie może stanowić duże ułatwienie przy analizowaniu logów.</span><br>
+<span>Przy operowaniu na takich tablicach możemy dodatkowo korzystać z zapytań </span><em><span>KQL</span></em><span>:</span></p><p><img src="https://i.imgur.com/mSogMoK.png" alt="" loading="lazy"></p><p><img src="https://i.imgur.com/wcbLb99.png" alt="" loading="lazy"></p><p><span>Takie rozwiązanie daje analitykom bezpieczeństwa dużą dowolność i praktycznie nieograniczone możliwości w tworzeniu tablic zgodnie z preferencjami danego zespołu. Dobrze przygotowany </span><em><span>dashboard</span></em><span> może skutkować oszczędznością czasu zespołu w przyszłości.</span></p><h4 id="Elastalert" data-id="Elastalert"><a class="anchor hidden-xs" href="#Elastalert" title="Elastalert"><span class="octicon octicon-link"></span></a><span>Elastalert</span></h4><p><span>Elastalert jest kolejnym komponentem całego </span><em><span>HELK</span></em><span>’a, który pozwala nam na operowanie na logach z </span><em><span>Elasticsearch</span></em><span>’a. Tym razem mamy do czynienia  z brakiem interfejsu użytkownika.</span><br>
+<span>Możemy przygotować odpowiednie reguły np. w formacie zapytań </span><em><span>KQL</span></em><span> i w przypadku wykrycia dopasowania wysłać alert we wskazane miejsce.</span></p><ul>
+<li>
+<p><span>Przygotowana przez nas reguła wskazująca na </span><em><span>id</span></em><span> loga znajdującego się we wczytanym przez nas zestawie danych:</span><br>
+<img src="https://i.imgur.com/UDiJZMQ.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p><span>Odebrany pod wskazanym adresem alert zawierający podejrzanego loga:</span><br>
+<img src="https://i.imgur.com/r47MzU3.png" alt="" loading="lazy"></p>
+</li>
+</ul><p><span>Powyższe rozwiązanie pozwala na zmniejszenie czasu reakcji zespołu na podejrzane zdarzenie.</span></p><h4 id="Reszta-komponentów" data-id="Reszta-komponentów"><a class="anchor hidden-xs" href="#Reszta-komponentów" title="Reszta-komponentów"><span class="octicon octicon-link"></span></a><span>Reszta komponentów</span></h4><p><span>Pozostałe komponenty </span><em><span>HELK</span></em><span>’a jak np. </span><em><span>Apache Spark</span></em><span> w połączeniu z </span><em><span>JupyterNotebook</span></em><span> i innymi pozwalają na dodatkowe zwiększenie możliwości analizy danych zebarnych w </span><em><span>Elasticsearch</span></em><span>’u. Przykładem takiego działania może być tworzenie diagramów relacyjnych. Takie działania otwierają badaczom nowe perspektywy na analizowane zbiory danych.</span></p><h3 id="HELK---Podsumowanie" data-id="HELK---Podsumowanie"><a class="anchor hidden-xs" href="#HELK---Podsumowanie" title="HELK---Podsumowanie"><span class="octicon octicon-link"></span></a><span>HELK - Podsumowanie</span></h3><p><span>Wszelkie wykonane przez nas działania zostały wykonane na stosunkowo małych zbiorach danych. W normalnych warunkach takich logów może być znacznie więcej, dodatkowo mogą one pochodzic z zupełnie różnych źródeł. Sprawdzone przez nas w tym punkcie środowisko może okazać się bezcennym narzędziem w rękach doświadczonego analtyka. Dzięki dołączonym do niego narzędziom, analiza zdarzeń dla większych zbiorów danych staje się zdecydowanie łatwiejsza.</span></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                
+                
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

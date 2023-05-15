@@ -1,0 +1,57 @@
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ OPEN raport_11_11_2021.tar.gz
+/home/ftpuser/files/ ACCESS raport_11_11_2021.tar.gz
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE raport_11_11_2021.tar.gz
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ DELETE raport_11_11_2021.tar.gz
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ CREATE raprt_11_11_2021.tar.gz
+/home/ftpuser/files/ OPEN raprt_11_11_2021.tar.gz
+/home/ftpuser/files/ MODIFY raprt_11_11_2021.tar.gz
+/home/ftpuser/files/ CLOSE_WRITE,CLOSE raprt_11_11_2021.tar.gz
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ ATTRIB raprt_11_11_2021.tar.gz
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ ATTRIB raprt_11_11_2021.tar.gz
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ OPEN,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ ACCESS,ISDIR 
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE,ISDIR 
+/home/ftpuser/files/ OPEN raprt_11_11_2021.tar.gz
+/home/ftpuser/files/ ACCESS raprt_11_11_2021.tar.gz
+/home/ftpuser/files/ CLOSE_NOWRITE,CLOSE raprt_11_11_2021.tar.gz

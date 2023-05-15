@@ -1,0 +1,20 @@
+Host:
+	- prywatny adres 10.0.3.15 - dostępny z sieci firmowej
+	Logi:
+		- syslog
+		- hostLogs.pcap
+		- admin_downloads.log 	-	logi operacji wykonywanych na plikach w głównym katalogu Downloads użytkownika admin
+		- audit.log
+
+Server:
+	- publiczny adres 10.0.2.10 - wystawiona na nim aplikacja webowa
+	- prywatny adres 10.0.3.10 - wystawiony na nim wewnętrzny serwer ftp
+	Logi:
+		- syslog
+		- serverLogs.pcap
+		- ftpuser.log	-	logi operacji wykonywanych na plikach w głównym katalogu serwera ftp
+		- vsftpd.log
+		- catalina.2021-11-15.log				\
+		- catalina.out							\\ TOMCAT
+		- localhost_access_log.2021-11-15.txt	//	LOGS
+		- localhost.2021-11-15.log				/

@@ -1,0 +1,6 @@
+Mon Nov 15 07:19:26 2021 [pid 2346] CONNECT: Client "10.0.3.15"
+Mon Nov 15 07:19:34 2021 [pid 2348] CONNECT: Client "10.0.3.15"
+Mon Nov 15 07:19:34 2021 [pid 2347] [ftpuser] OK LOGIN: Client "10.0.3.15"
+Mon Nov 15 07:19:46 2021 [pid 2352] CONNECT: Client "10.0.3.15"
+Mon Nov 15 07:19:46 2021 [pid 2351] [ftpuser] OK LOGIN: Client "10.0.3.15"
+Mon Nov 15 07:19:46 2021 [pid 2353] [ftpuser] OK DOWNLOAD: Client "10.0.3.15", "/raprt_11_11_2021.tar.gz", 2179031 bytes, 11544.98Kbyte/sec
